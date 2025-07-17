@@ -75,11 +75,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Botones de respuesta
   btnMenos?.addEventListener("click", () => {
-  alert("Has pulsado el botón MENOS");
+  mostrarResultado(generarResultado());
 });
 
 btnMas?.addEventListener("click", () => {
-  alert("Has pulsado el botón MÁS");
+  mostrarResultado(generarResultado());
 });
 
 
