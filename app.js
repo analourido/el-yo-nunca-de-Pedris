@@ -74,13 +74,14 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Botones de respuesta
-  btnMenos.addEventListener("click", () => {
-    mostrarResultado(generarResultado());
-  });
+  btnMenos?.addEventListener("click", () => {
+  alert("Has pulsado el botón MENOS");
+});
 
-  btnMas.addEventListener("click", () => {
-    mostrarResultado(generarResultado());
-  });
+btnMas?.addEventListener("click", () => {
+  alert("Has pulsado el botón MÁS");
+});
+
 
   btnSiguiente.addEventListener("click", () => {
     cambiarPantalla("juego");
