@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let resultado = `👉 ${drinks} ${drinks === 1 ? "trago" : "tragos"} las que SÍ lo hicieron. `;
     resultado += contarHistoria
-      ? "😈 Además, debeis contar la historia detrás."
+      ? "😈 Además, debeis contar la historia."
       : "😇 Esta vez no podeis contar nada.";
     return resultado;
   }
