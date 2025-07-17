@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yo Nunca PRO</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="manifest" href="manifest.json" />
+
+</head>
+
+<script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker
+        .register("service-worker.js")
+        .then((registration) => {
+          console.log("Service Worker registrado con éxito:", registration);
+        })
+        .catch((error) => {
+          console.log("Error al registrar Service Worker:", error);
+        });
+    }
+  </script>
+  
+
+<body>
+  <main class="container">
+
+
+    <!-- Pantalla inicial -->
+    <div id="pantalla-inicio" class="pantalla">
+        <div class="logo-container">
+            <img src="icons/Logo.png" alt="Logo El Yo Nunca de Pedris" class="logo-img">
+        </div>
+      <h2>¿Cuántos vais a jugar?</h2>
+      <input type="number" id="num-jugadores" min="2" max="30" placeholder="Ej: 6" />
+      <button id="empezar">Empezar</button>
+    </div>
+
+    <!-- Pantalla de juego -->
+    <div id="pantalla-juego" class="pantalla hidden">
+      <h2 id="frase"></h2>
+      <div class="botones-juego">
+        <button id="btn-menos">Menos de la mitad lo hicieron</button>
+        <button id="btn-mas">Más de la mitad lo hicieron</button>
+      </div>
+    </div>
+
+    <!-- Pantalla de resultado -->
+    <div id="pantalla-resultado" class="pantalla hidden">
+      <div id="resultado-texto"></div>
+      <button id="siguiente">Siguiente frase</button>
+    </div>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+    "name": "El Yo Nunca de Pedris",
+    "short_name": "Yo Nunca",
+    "description": "Una app por y para mis amigas.",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#C62368",
+    "theme_color": "#FF4F98",
+    "icons": [
+      {
+        "src": "icons/logo-192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/logo-512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
