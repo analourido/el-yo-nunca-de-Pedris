@@ -20,8 +20,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Botón de bienvenida
   btnEmpezar.addEventListener("click", () => {
-    cambiarPantalla("inicio");
-  });
+  const valor = parseInt(inputJugadores.value);
+
+  // DEBUG para consola
+  console.log("Valor introducido:", valor);
+
+  if (isNaN(valor)) {
+    alert("⚠️ Debes introducir un número válido");
+    inputJugadores.focus();
+    return;
+  }
+
+  if (valor < 2) {
+    alert("⚠️ Mínimo 2 personas para jugar");
+    inputJugadores.focus();
+    return;
+  }
+
+  // Si todo está bien, continúa el juego
+  numJugadores = valor;
+  cambiarPantalla("juego");
+  mostrarFrase();
+});
 
   // Cargar frases
   fetch("frases.json")
