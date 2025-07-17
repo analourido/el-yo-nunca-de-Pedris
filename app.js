@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const btnContinuar = document.getElementById("btn-continuar");
 
   // Botón de bienvenida
-  btnContinuar.addEventListener("click", () => {
+  btnEmpezar.addEventListener("click", () => {
     cambiarPantalla("inicio");
   });
 
