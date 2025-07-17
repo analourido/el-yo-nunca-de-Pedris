@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const inputJugadores = document.getElementById("num-jugadores");
   const btnEmpezar = document.getElementById("empezar");
-  const btnMenos = document.getElementById("btn-menor");
+  const btnMenos = document.getElementById("btn-menos");
   const btnMas = document.getElementById("btn-mas");
   const btnSiguiente = document.getElementById("siguiente");
 
