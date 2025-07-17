@@ -60,17 +60,6 @@ document.addEventListener("DOMContentLoaded", () => {
     fraseEl.classList.add("fadeIn");
   }
 
-  // Botón empezar
-  btnEmpezar.addEventListener("click", () => {
-    const valor = parseInt(inputJugadores.value);
-    if (valor >= 2) {
-      numJugadores = valor;
-      cambiarPantalla("juego");
-      mostrarFrase();
-    } else {
-      alert("Debe haber al menos 2 jugadores.");
-    }
-  });
 
   // Generar resultado
   function generarResultado() {
